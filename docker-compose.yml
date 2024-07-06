@@ -6,10 +6,9 @@ services:
     image: localstack/localstack:3.0.2
     ports:
       - "127.0.0.1:4566:4566"           # Localstack Gateway
-      - "127.0.0.1:4510-4599:4510-4599" # external services port range
     environment:
       # Localstack configuration: https://docs.localstack.cloud/references/configuration/
-      - AWS_DEFAULT_REGION=ap-northeast-2
+      - AWS_DEFAULT_REGION=ap-southeast-2
       - SERVICES=s3,dynamodb # 사용할 서비스
       - DEBUG=1
       - LOCALSTACK_AUTH_TOKEN="ls-RiRi1593-saMo-Soca-lUJO-6987VaGA745f"
